@@ -64,7 +64,6 @@ func (b *Buffer) Len() int { return len(b.buf) - b.off }
 // total space allocated for the buffer's data.
 func (b *Buffer) Cap() int { return cap(b.buf) }
 
-//todo fixed by neeke
 // Truncate discards all but the first n unread bytes from the buffer
 // but continues to use the same allocated storage.
 // It panics if n is negative or greater than the length of the buffer.
